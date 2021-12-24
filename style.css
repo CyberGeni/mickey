@@ -21,6 +21,7 @@ body {
     height: 100px;
     background-color: black;
     border-radius: 50% 48% 48% 49%;
+    z-index: -20;
 }
 .face {
     display: flex;
@@ -32,6 +33,7 @@ body {
     background-color: black;
     border-radius: 50%;
     margin: auto;
+    z-index: -10;
 }
 .eyes {
     display: flex;
@@ -42,6 +44,10 @@ body {
     z-index: 10;
 }
 .eye-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
     position: absolute;
     z-index: 10;
     width: 75px;
@@ -58,20 +64,14 @@ body {
     transform: rotate(-8deg);
 }
 .eye {
+    display: flex;   
     position: absolute;
     width: 25px;
     height: 75px;
     background-color: white;
     border: 2px solid black;
     border-radius: 50%;
-    z-index: 10000;
-}
-.eye-area:first-child {  
-    margin-left: -3.7em;
-    transform: rotate(8deg);
-}
-.eye-area:last-child {
-    transform: rotate(-8deg);
+    z-index: 10;
 }
 .chin {
     display: flex;
@@ -80,6 +80,7 @@ body {
     width: 150px;
     margin: auto;
     margin-top: 100px; 
+    z-index: -30;
 }
 .weinie-chin {
     width: 55px;
@@ -106,5 +107,5 @@ body {
     border-right: 2px solid transparent;
     border-bottom: 2px solid black;
     background-color: white;
-    z-index: 100;
+    z-index: -10;
 }
